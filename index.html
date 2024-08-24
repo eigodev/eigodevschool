@@ -9,6 +9,9 @@
 <body>
     <div class="container">
         <div class="login-box">
+            <div class="logo-container">
+                <img src="images/logo.jpg" class="logo">
+            </div>
             <form>
                 <label for="username">Username</label>
                 <input type="text" id="username" name="username" placeholder="Email address" required>
@@ -17,7 +20,10 @@
                 <input type="password" id="password" name="password" placeholder="Password" required>
             </form>
             <div class="options">
-                <p>Remember Me</p>
+                <div class="checkbox">
+                    <input type="checkbox" id="remember-me" name="remember-me">
+                    Remember me
+                </div>
                 <a href="Retrieve Password/retrieve.html">Forgot Password?</a>
             </div>
         </div>
