@@ -64,6 +64,7 @@ input:hover::placeholder{
     transition: 0.7s ease;
 }
 
+/* Media Queries*/
 @media(max-width: 500px){
     .login-box{
         width: 75vw;
@@ -71,6 +72,6 @@ input:hover::placeholder{
     }
 
     input{
-        width: 50vw;
+        width: 70vw;
     }
 }
