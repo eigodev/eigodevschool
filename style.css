@@ -16,8 +16,8 @@ html, body{
 }
 
 .login-box{
-    width: 40vw;
-    height: 300px;
+    width: 600px;
+    height: 310px;
     background-color: rgba(255, 255, 255, 1);
     border-radius: 25px;
 
@@ -25,6 +25,13 @@ html, body{
     justify-content: end;
     align-items: center;
     flex-direction: column;
+    transition: 0.5s ease;
+}
+
+.login-box:hover{
+    width: 650px;
+    background-color: rgba(255, 255, 255, 0.5);
+    transition: 0.5s ease;
 }
 
 /*Logo*/
@@ -56,23 +63,35 @@ label{
 
     margin-top: 10px;
     margin-bottom: 15px;
-    margin-left: 15px;
+    margin-left: 5px;
 }
 
 input{
     width: 400px;
     height: 35px;
+    
+    outline: none;
+    border: none;
     border-radius: 6.5px;
+    border-left: 1px solid #000;
+    border-bottom: 1px solid #000;
 
-    font-family: Montserrat;
-    font-size: 10px;
-    font-weight: 100;
+    padding-left: 15px;
+    cursor: pointer;
+    box-sizing: border-box;
 }
 
 input::placeholder{
-    font-size: 15px;
+    color: rgb(80, 80, 80);
+    outline: none;
+    transition: 0.75s ease;
 }
 
+input:hover::placeholder{
+    color: rgba(0, 0, 0, 0.15);
+    outline: none;
+    transition: 0.5s ease;
+}
 
 .options{
     width: 400px;
