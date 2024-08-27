@@ -23,14 +23,17 @@ function validateLogin(event){
     const enteredPassword = document.getElementById('password').value
 
     let loginSuccesful = false
+    let matchedUser = null
+
     for (let index = 0; userCredentials.length; index++){
         let user = userCredentials[index]
 
         if(enteredUsername === user.username || enteredUsername === user.email && enteredPassword === user.password){
             loginSuccesful = true
+            matchedUser = user
             break
         }
     }
-    if (loginSuccesful){alert('Deu certo.')}
-    else {alert('Deu errado.')}
+    if (loginSuccesful){alert(`Seja bem-vindo(a) ${matchedUser.username}`)}
+    else {alert('Você não possui cadastro!')}
 }
