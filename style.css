@@ -10,6 +10,7 @@ html, body{
     min-height: 100vh;
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background: linear-gradient(135deg, #FFA500, #FFFF00);
@@ -32,6 +33,10 @@ html, body{
     width: 650px;
     background-color: rgba(255, 255, 255, 0.5);
     transition: 0.5s ease;
+}
+
+#login-form{
+    position: relative;
 }
 
 /*Logo*/
@@ -82,15 +87,26 @@ input{
 }
 
 input::placeholder{
-    color: rgb(80, 80, 80);
+    color: rgba(80, 80, 80, 0.25);
     outline: none;
     transition: 0.75s ease;
 }
 
 input:hover::placeholder{
-    color: rgba(0, 0, 0, 0.15);
+    color: rgba(0, 0, 0, 0);
     outline: none;
     transition: 0.5s ease;
+}
+
+.icon-password{
+    width: 20px;
+    height: auto;
+
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(275%);
 }
 
 .options{
@@ -133,4 +149,39 @@ a{
 
     display: flex;
     justify-content: end;
+}
+
+/* Buttons */
+#buttons{
+    width: 250px;
+    
+    display: flex;
+    justify-content: space-around;
+}
+
+.buttons-format{
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+    
+    font-family: Montserrat;
+    font-weight: 400;
+    
+    margin-top: 30px;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons-format{
+    box-shadow: 1px 5px 5px rgba(0, 0, 0, 0);
+    transition: box-shadow 0.5s ease;
+}
+
+.buttons-format:hover{
+    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.25);
+    transition: box-shadow 0.5s ease;
 }

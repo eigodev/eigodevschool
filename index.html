@@ -10,26 +10,38 @@
 <body>
     <div class="container">
         <div class="login-box">
+            <!-- Logo -->
             <div class="logo-container">
                 <img src="images/logo.jpg" class="logo">
             </div>
-            <form id="loginForm">
+
+            <!-- Form -->
+            <form id="login-form">
                 <label for="username">Username</label>
-                <input type="text" id="username" name="username" placeholder="Email address" required>
+                <input type="text" id="username" name="username" placeholder="Email address or username" required>
 
                 <label for="password">Password</label>
                 <input type="password" id="password" name="password" placeholder="Password" required>
+                <img src="images/icons/eye.png" class="icon-password" id="show-icon">
+                <img src="images/icons/hidden.png" class="icon-password" id="hide-icon">
             </form>
+
+            <!-- Extra Options-->
             <div class="options">
+                <!-- Text + Checkbox -->
                 <div class="checkbox">
                     <input type="checkbox" id="remember-me" name="remember-me">
                     <p>Remember me</p>
                 </div>
+
+                <!-- Link -->
                 <a href="Retrieve Password/retrieve.html">Forgot Password?</a>
             </div>
         </div>
+        <div id="buttons">
+            <div class="buttons-format" id="login-in">Login</div>
+            <div class="buttons-format" id="sign-up">Sign-up</div>
+        </div>
     </div>
-    <p id="loginMessage"></p>
-    <script src="script.js"></script>
 </body>
 </html>
