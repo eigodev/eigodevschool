@@ -3,7 +3,14 @@
 html, body{
     margin: 0;
     padding: 0;
-    height: 100%;
+
+    width: 100vw;
+    height: 100vh;
+}
+
+body{
+    background-image: url('images/225780321_747351749325315_60432859827961084_n.jpg');
+    background-size: cover;
 }
 
 .container{
@@ -13,13 +20,12 @@ html, body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(135deg, #FFA500, #FFFF00);
 }
 
 .login-box{
     width: 600px;
     height: 310px;
-    background-color: rgba(255, 255, 255, 1);
+    background-color: rgb(0, 0, 0);
     border-radius: 25px;
 
     display: flex;
@@ -30,8 +36,8 @@ html, body{
 }
 
 .login-box:hover{
-    width: 650px;
-    background-color: rgba(255, 255, 255, 0.5);
+    width: 625px;
+    background-color: rgba(0, 0, 0, 0.5);
     transition: 0.5s ease;
 }
 
@@ -51,7 +57,7 @@ img{
     width: 150px;
     height: 150px;
     border-radius: 20px;
-    transform: translateY(-50%);
+    transform: translateY(-55%);
 }
 
 /*Form Section*/
@@ -65,6 +71,7 @@ form{
 label{
     font-family: Montserrat;
     font-size: 20px;
+    color: #ff5e00;
 
     margin-top: 10px;
     margin-bottom: 15px;
@@ -87,13 +94,13 @@ input{
 }
 
 input::placeholder{
-    color: rgba(80, 80, 80, 0.25);
+    color: rgba(80, 80, 80, 0.65);
     outline: none;
     transition: 0.75s ease;
 }
 
 input:hover::placeholder{
-    color: rgba(0, 0, 0, 0);
+    color: rgba(0, 0, 0, 0.15);
     outline: none;
     transition: 0.5s ease;
 }
@@ -141,6 +148,7 @@ input:hover::placeholder{
 
 p, a{
     font-size: 12.5px;
+    color: #ff8d4b;
 }
 
 a{
