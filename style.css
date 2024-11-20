@@ -11,6 +11,7 @@ html, body{
 body{
     background-image: url('images/225780321_747351749325315_60432859827961084_n.jpg');
     background-size: cover;
+    background-attachment: fixed;
 }
 
 .container{
@@ -75,7 +76,6 @@ label{
 
     margin-top: 10px;
     margin-bottom: 15px;
-    margin-left: 5px;
 }
 
 input{
@@ -192,4 +192,47 @@ a{
 .buttons-format:hover{
     box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.25);
     transition: box-shadow 0.5s ease;
+}
+
+/* Sign-up Form */
+#signUpForm{
+    width: 600px;
+    height: 600px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 25px;
+
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.5s ease;
+}
+
+#signUpForm:hover{
+    width: 625px;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: 0.5s ease;
+}
+
+#signUp{
+    width: 400px;
+}
+
+#name{
+    display: flex;
+    flex-direction: column;
+}
+
+#buttonSignUp{
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+    font-family: Montserrat;
+    font-weight: 400;
+    margin-top: 30px;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

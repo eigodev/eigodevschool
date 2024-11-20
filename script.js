@@ -15,11 +15,3 @@ hidePasswordIcon.addEventListener('click', function(){
     hidePasswordIcon.style.display = 'none'
     showPasswordIcon.style.display = 'block'
 })
-
-logIn.addEventListener('click', function(){
-    console.log('clicou Login')
-})
-
-signUp.addEventListener('click', function(){
-    console.log('clicou Sign-up')
-})

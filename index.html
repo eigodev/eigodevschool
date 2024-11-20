@@ -39,10 +39,38 @@
                 <!-- Link -->
                 <a href="Retrieve Password/retrieve.html">Forgot Password?</a>
             </div>
+
         </div>
         <div id="buttons">
-            <div class="buttons-format" id="login-in">Login</div>
-            <div class="buttons-format" id="sign-up">Sign-up</div>
+            <div class="buttons-format" id="login-in" onclick="handleLogin()">Login</div>
+            <div class="buttons-format" id="sign-up" onclick="toggleForm()">Sign-up</div>
+        </div>
+        
+        <!-- Sign-up form -->
+        <div id="signUpForm" class="form-container">
+            <form id="signUp">
+                <label for="newUsername">Username</label>
+                <input type="text" id="newUsername" placeholder="Choose a username!">
+                
+                <div id="name">
+                    <div>
+                        <label for="firstName">First Name</label>
+                        <input type="text" id="newUsername" placeholder="What's your first name?">
+                    </div>
+                    <div>
+                        <label for="lastName">Last Name</label>
+                        <input type="text" id="newUsername" placeholder="And what's your last name?">
+                    </div>
+                </div>
+
+                <label for="newEmail">Email</label>
+                <input type="email" id="newEmail" placeholder="Enter a valid email address!">
+                
+                <label for="newPassword">Password</label>
+                <input type="password" id="newPassword" placeholder="Enter a password!">
+                
+                <button type="button" id="buttonSignUp" onclick="handleSignUp()">Create my account</button>
+            </form>
         </div>
     </div>
     <script src="script.js"></script>
