@@ -1,238 +1,109 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-html, body{
+* {
     margin: 0;
     padding: 0;
-
-    width: 100vw;
-    height: 100vh;
-}
-
-body{
-    background-image: url('images/225780321_747351749325315_60432859827961084_n.jpg');
-    background-size: cover;
-    background-attachment: fixed;
-}
-
-.container{
-    min-height: 100vh;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.login-box{
-    width: 600px;
-    height: 310px;
-    background-color: rgb(0, 0, 0);
-    border-radius: 25px;
-
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    flex-direction: column;
-    transition: 0.5s ease;
-}
-
-.login-box:hover{
-    width: 625px;
-    background-color: rgba(0, 0, 0, 0.5);
-    transition: 0.5s ease;
-}
-
-#login-form{
-    position: relative;
-}
-
-/*Logo*/
-.logo-container{
-    width: 100%;
-    height: 75px;
-    display: flex;
-    justify-content: center;
-}
-
-img{
-    width: 150px;
-    height: 150px;
-    border-radius: 20px;
-    transform: translateY(-55%);
-}
-
-/*Form Section*/
-form{
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-
-label{
-    font-family: Montserrat;
-    font-size: 20px;
-    color: #ff5e00;
-
-    margin-top: 10px;
-    margin-bottom: 15px;
-}
-
-input{
-    width: 400px;
-    height: 35px;
-    
-    outline: none;
-    border: none;
-    border-radius: 6.5px;
-    border-left: 1px solid #000;
-    border-bottom: 1px solid #000;
-
-    padding-left: 15px;
-    cursor: pointer;
     box-sizing: border-box;
+    font-family: 'Poppins';
 }
 
-input::placeholder{
-    color: rgba(80, 80, 80, 0.65);
-    outline: none;
-    transition: 0.75s ease;
+body {
+    background-image: url('images/IMG_0001.jpg');
+    background-size: cover; /* Ensures the image covers the entire screen */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    height: 100vh; /* Ensures the background covers the full viewport height */
+    width: 100vw;
 }
 
-input:hover::placeholder{
-    color: rgba(0, 0, 0, 0.15);
-    outline: none;
-    transition: 0.5s ease;
-}
-
-.icon-password{
-    width: 20px;
-    height: auto;
-
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    right: 10px;
-    transform: translateY(275%);
-}
-
-.options{
-    width: 400px;
+#main-container {
     display: flex;
-    
-    margin-top: 10px;
-    margin-bottom: 40px;
+    justify-content: center; /* Centers horizontally */
+    align-items: flex-start;  /* Centers vertically */
+    height: 100vh; /* Makes sure the container takes the full viewport height */
+    padding-top: 50px; /* Moves everything down without increasing total height */  
+}
 
+#register-section {
+    width: 65vw; /* Set a fixed width */
+    height: 150px; /* Set a proper height */
+    background-color: #ffffff; /* Slight transparency */
+    border: 2px solid black; /* Add a visible border */
+    border-radius: 50px; /* Rounded corners */
+
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center;  /* Centers vertically */
+}
+
+#register-items {
+    width: 85%; /* Set a fixed width */
+    height: 75px; /* Set a proper height */
+    background-color: rgba(255, 255, 255, 0.9); /* Slight transparency */
+    border-radius: 10px; /* Rounded corners */
+
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center;  /* Centers vertically */
+}
+
+#student-form {
+    width: 100%;
+    display: flex;
     justify-content: space-between;
-    align-items: center;
-    
-    font-family: Poppins;
-    font-size: 10px;
 }
 
-.checkbox{
-    width: 50%;
-    height: 20px;
+.form-items {
+    color: #ffffff;
+    background-color: #000000;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 
     display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
-#remember-me{
-    width: 15px;
-    height: 15px;
+input[type="date"],
+input[type="time"] {
+    padding: 5px;
+    text-align: center; /* Centers text inside the input */
+    font-size: 15px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: white;
     cursor: pointer;
-    outline: none;
-    margin-right: 5px;
 }
 
-p, a{
-    font-size: 12.5px;
-    color: #ff8d4b;
+#class-type {
+    padding: 5;
+    text-align: center; /* Centers text inside the dropdown */
+    text-align-last: center; /* Ensures the selected option is centered */
+    font-size: 15px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: white;
+    cursor: pointer;
 }
 
-a{
-    width: 50%;
-    text-decoration: none;
-
-    display: flex;
-    justify-content: end;
-}
-
-/* Buttons */
-#buttons{
-    width: 250px;
-    
-    display: flex;
-    justify-content: space-around;
-}
-
-.buttons-format{
+#number-list {
     width: 100px;
-    height: 40px;
+    padding: 5;
+    text-align: center; /* Centers text inside the dropdown */
+    text-align-last: center; /* Ensures the selected option is centered */
+    font-size: 15px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: white;
     cursor: pointer;
-    
-    font-family: Montserrat;
-    font-weight: 400;
-    
-    margin-top: 30px;
-    border-radius: 10px;
-    background-color: #FFFFFF;
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-.buttons-format{
-    box-shadow: 1px 5px 5px rgba(0, 0, 0, 0);
-    transition: box-shadow 0.5s ease;
-}
-
-.buttons-format:hover{
-    box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.25);
-    transition: box-shadow 0.5s ease;
-}
-
-/* Sign-up Form */
-#signUpForm{
-    width: 600px;
-    height: 600px;
-    background-color: rgb(0, 0, 0);
-    border-radius: 25px;
-
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    flex-direction: column;
-    transition: 0.5s ease;
-}
-
-#signUpForm:hover{
-    width: 625px;
-    background-color: rgba(0, 0, 0, 0.5);
-    transition: 0.5s ease;
-}
-
-#signUp{
-    width: 400px;
-}
-
-#name{
-    display: flex;
-    flex-direction: column;
-}
-
-#buttonSignUp{
-    width: 150px;
-    height: 40px;
+#teacher-name {
+    width: 125px;
+    padding: 5;
+    text-align: center; /* Centers text inside the dropdown */
+    text-align-last: center; /* Ensures the selected option is centered */
+    font-size: 15px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: white;
     cursor: pointer;
-    font-family: Montserrat;
-    font-weight: 400;
-    margin-top: 30px;
-    border-radius: 10px;
-    background-color: #FFFFFF;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }

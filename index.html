@@ -3,76 +3,168 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passport English Club</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="images/favicon.ico">
-    <title>Teacher's Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <div class="login-box">
-            <!-- Logo -->
-            <div class="logo-container">
-                <img src="images/logo.jpg" class="logo">
-            </div>
+    <div id="main-container">
+        <div id="register-section">
+            <div id="register-items">
+                <form id="student-form">
+                    <!-- Class Date -->
+                    <input type="date" id="class-date" name="class-date" >
+                    
+                    <!-- Class Time -->
+                    <input type="time" id="class-time" name="class-time">
 
-            <!-- Form -->
-            <form id="login-form">
-                <label for="username">Username</label>
-                <input type="text" id="username" name="username" placeholder="Email address or username" required>
-
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password" placeholder="Password" required>
-                
-                <!-- Icons -->
-                <img src="images/icons/eye.png" class="icon-password" id="show-icon">
-                <img src="images/icons/hidden.png" class="icon-password" id="hide-icon">
-            </form>
-
-            <!-- Extra Options-->
-            <div class="options">
-                <!-- Text + Checkbox -->
-                <div class="checkbox">
-                    <input type="checkbox" id="remember-me" name="remember-me">
-                    <p>Remember me</p>
-                </div>
-
-                <!-- Link -->
-                <a href="Retrieve Password/retrieve.html">Forgot Password?</a>
-            </div>
-
-        </div>
-        <div id="buttons">
-            <div class="buttons-format" id="login-in" onclick="handleLogin()">Login</div>
-            <div class="buttons-format" id="sign-up" onclick="toggleForm()">Sign-up</div>
-        </div>
-        
-        <!-- Sign-up form -->
-        <div id="signUpForm" class="form-container">
-            <form id="signUp">
-                <label for="newUsername">Username</label>
-                <input type="text" id="newUsername" placeholder="Choose a username!">
-                
-                <div id="name">
-                    <div>
-                        <label for="firstName">First Name</label>
-                        <input type="text" id="newUsername" placeholder="What's your first name?">
+                    <!-- Student ID -->
+                    <div class="form-items">
+                        <label for="student-id">Student's ID</label>
+                        <input type="text" id="student-id" name="student-id">
                     </div>
-                    <div>
-                        <label for="lastName">Last Name</label>
-                        <input type="text" id="newUsername" placeholder="And what's your last name?">
+                    
+                    <!-- Student Name -->
+                    <div class="form-items">
+                        <label for="student-name">Student's Name</label>
+                        <input type="text" id="student-name" name="student-name">
                     </div>
-                </div>
 
-                <label for="newEmail">Email</label>
-                <input type="email" id="newEmail" placeholder="Enter a valid email address!">
-                
-                <label for="newPassword">Password</label>
-                <input type="password" id="newPassword" placeholder="Enter a password!">
-                
-                <button type="button" id="buttonSignUp" onclick="handleSignUp()">Create my account</button>
-            </form>
+                    <!-- Class Type Dropdown -->
+                    <select id="class-type" name="class-type">
+                        <option value="" disabled selected>Class Type</option>
+                        <option>Flight</option>
+                        <option>Levelling</option>
+                        <option>-</option>
+                        <option>'Conversation (ESL)'</option>
+                        <option>'Conversation (Free)'</option>
+                        <option>'Conversation (Grammar)'</option>
+                        
+                    </select>
+
+                    <!-- Flight Number Dropdown -->
+                    <select id="number-list">
+                        <option value="" disabled selected>Flight #</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+                        <option value="32">32</option>
+                        <option value="33">33</option>
+                        <option value="34">34</option>
+                        <option value="35">35</option>
+                        <option value="36">36</option>
+                        <option value="37">37</option>
+                        <option value="38">38</option>
+                        <option value="39">39</option>
+                        <option value="40">40</option>
+                        <option value="41">41</option>
+                        <option value="42">42</option>
+                        <option value="43">43</option>
+                        <option value="44">44</option>
+                        <option value="45">45</option>
+                        <option value="46">46</option>
+                        <option value="47">47</option>
+                        <option value="48">48</option>
+                        <option value="49">49</option>
+                        <option value="50">50</option>
+                        <option value="51">51</option>
+                        <option value="52">52</option>
+                        <option value="53">53</option>
+                        <option value="54">54</option>
+                        <option value="55">55</option>
+                        <option value="56">56</option>
+                        <option value="57">57</option>
+                        <option value="58">58</option>
+                        <option value="59">59</option>
+                        <option value="60">60</option>
+                        <option value="61">61</option>
+                        <option value="62">62</option>
+                        <option value="63">63</option>
+                        <option value="64">64</option>
+                        <option value="65">65</option>
+                        <option value="66">66</option>
+                        <option value="67">67</option>
+                        <option value="68">68</option>
+                        <option value="69">69</option>
+                        <option value="70">70</option>
+                        <option value="71">71</option>
+                        <option value="72">72</option>
+                        <option value="73">73</option>
+                        <option value="74">74</option>
+                        <option value="75">75</option>
+                        <option value="76">76</option>
+                        <option value="77">77</option>
+                        <option value="78">78</option>
+                        <option value="79">79</option>
+                        <option value="80">80</option>
+                        <option value="81">81</option>
+                        <option value="82">82</option>
+                        <option value="83">83</option>
+                        <option value="84">84</option>
+                        <option value="85">85</option>
+                        <option value="86">86</option>
+                        <option value="87">87</option>
+                        <option value="88">88</option>
+                        <option value="89">89</option>
+                        <option value="90">90</option>
+                    </select>                    
+
+                    <!-- Teacher Dropdown -->
+                    <select id="teacher-name" name="teacher-name">
+                        <option value="" disabled selected>Teacher</option>
+                        <option value="ana-beatriz">Ana Beatriz</option>
+                        <option value="ana-leticia">Ana Letícia</option>
+                        <option value="bella">Bella</option>
+                        <option value="carol">Carol</option>
+                        <option value="charles">Charles</option>
+                        <option value="deluca">Deluca</option>
+                        <option value="debora">Débora</option>
+                        <option value="fred">Fred</option>
+                        <option value="icaro">Icaro</option>
+                        <option value="julia">Julia</option>
+                        <option value="leandro">Leandro</option>
+                        <option value="lesley">Lesley</option>
+                        <option value="livia">Livia</option>
+                        <option value="lucas">Lucas</option>
+                        <option value="nino">Nino</option>
+                        <option value="priscilla">Priscilla</option>
+                        <option value="ricardo">Ricardo</option>
+                        <option value="samuel">Samuel</option>
+                        <option value="thiago-fo">Thiago</option>
+                        <option value="vickie">Vickie</option>
+                        <option value="yanice">Yanice</option>
+                    </select>                    
+                </form>
+            </div>
         </div>
     </div>
-    <script src="script.js"></script>
 </body>
 </html>
