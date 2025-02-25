@@ -9,557 +9,598 @@
 </head>
 <body>
     <div id="main-container">
-        <div id="register-section">
-            <div id="register-items">
-                <form id="student-form">
-                    <!-- Class Date -->
-                    <input type="date" id="class-date" name="class-date" >
-                    
-                    <!-- Class Time -->
-                    <input type="time" id="class-time" name="class-time">
-
-                    <!-- Student ID -->
-                    <div class="form-items">
-                        <label for="student-id">Student's ID</label>
-                        <input type="text" id="student-id" name="student-id">
+        <div id="form-container">
+            <div id="register-section">
+                <div id="register-items">
+                    <form id="student-form">
+                        <!-- Class Date -->
+                        <input type="date" id="class-date" name="class-date" >
+                        
+                        <!-- Class Time -->
+                        <input type="time" id="class-time" name="class-time">
+    
+                        <!-- Student ID -->
+                        <div class="form-items">
+                            <label for="student-id">Student's ID</label>
+                            <input type="text" id="student-id" name="student-id">
+                        </div>
+                        
+                        <!-- Student Name -->
+                        <div class="form-items">
+                            <label for="student-name">Student's Name</label>
+                            <input type="text" id="student-name" name="student-name">
+                        </div>
+    
+                        <!-- Student's Level -->
+                        <select id="student-level" name="student-level">
+                            <option value="" disabled selected>Level</option>
+                            <option value="A1-A2">A1 — A2</option>
+                            <option value="A2-B1">A2 — B1</option>
+                            <option value="B1-B2">B1 — B2</option>
+                            <option value="B2-C1">B2 — C1</option>
+                            <option value="C1-C2">C1 — C2</option>
+                        </select>
+    
+                        <!-- Class Type Dropdown -->
+                        <select id="class-type" name="class-type">
+                            <option value="" disabled selected>Class Type</option>
+                            <option value="Flight">Flight</option>
+                            <option value="Levelling">Levelling</option>
+                            <option value="-">-</option>
+                            <option value="Conversation-esl">Conversation (E)</option>
+                            <option value="Conversation-free">Conversation (F)</option>
+                            <option value="Conversation-grammar">Conversation (G)</option>
+                        </select>
+    
+                        <!-- Flight Number Dropdown -->
+                        <select id="number-list">
+                            <option value="" disabled selected>Flight #</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                            <option value="25">25</option>
+                            <option value="26">26</option>
+                            <option value="27">27</option>
+                            <option value="28">28</option>
+                            <option value="29">29</option>
+                            <option value="30">30</option>
+                            <option value="31">31</option>
+                            <option value="32">32</option>
+                            <option value="33">33</option>
+                            <option value="34">34</option>
+                            <option value="35">35</option>
+                            <option value="36">36</option>
+                            <option value="37">37</option>
+                            <option value="38">38</option>
+                            <option value="39">39</option>
+                            <option value="40">40</option>
+                            <option value="41">41</option>
+                            <option value="42">42</option>
+                            <option value="43">43</option>
+                            <option value="44">44</option>
+                            <option value="45">45</option>
+                            <option value="46">46</option>
+                            <option value="47">47</option>
+                            <option value="48">48</option>
+                            <option value="49">49</option>
+                            <option value="50">50</option>
+                            <option value="51">51</option>
+                            <option value="52">52</option>
+                            <option value="53">53</option>
+                            <option value="54">54</option>
+                            <option value="55">55</option>
+                            <option value="56">56</option>
+                            <option value="57">57</option>
+                            <option value="58">58</option>
+                            <option value="59">59</option>
+                            <option value="60">60</option>
+                            <option value="61">61</option>
+                            <option value="62">62</option>
+                            <option value="63">63</option>
+                            <option value="64">64</option>
+                            <option value="65">65</option>
+                            <option value="66">66</option>
+                            <option value="67">67</option>
+                            <option value="68">68</option>
+                            <option value="69">69</option>
+                            <option value="70">70</option>
+                            <option value="71">71</option>
+                            <option value="72">72</option>
+                            <option value="73">73</option>
+                            <option value="74">74</option>
+                            <option value="75">75</option>
+                            <option value="76">76</option>
+                            <option value="77">77</option>
+                            <option value="78">78</option>
+                            <option value="79">79</option>
+                            <option value="80">80</option>
+                            <option value="81">81</option>
+                            <option value="82">82</option>
+                            <option value="83">83</option>
+                            <option value="84">84</option>
+                            <option value="85">85</option>
+                            <option value="86">86</option>
+                            <option value="87">87</option>
+                            <option value="88">88</option>
+                            <option value="89">89</option>
+                            <option value="90">90</option>
+                        </select>                    
+    
+                        <!-- A1/A2 Topics Dropdown -->
+                        <select id="lesson-topics-a1-a2" name="lesson-topics-a1-a2">
+                            <option value="" disabled selected>Select a topic</option>
+                            <option value="20th-century-lives">20th Century Lives</option>
+                            <option value="a-city-break">A City Break</option>
+                            <option value="a-city-tour">A City Tour</option>
+                            <option value="animals-habitats">Animals and Habitats</option>
+                            <option value="at-the-deli">At the Deli</option>
+                            <option value="breakfast-time">Breakfast Time</option>
+                            <option value="business-people">Business People</option>
+                            <option value="catching-a-bus">Catching a Bus</option>
+                            <option value="christmas-day">Christmas Day</option>
+                            <option value="company-history">Company History</option>
+                            <option value="describing-a-friend">Describing a Friend</option>
+                            <option value="do-we-have-any-onions">Do We Have Any Onions?</option>
+                            <option value="dream-home">What is Your Dream Home</option>
+                            <option value="eat-the-rainbow">Eat the Rainbow</option>
+                            <option value="entertaining-business-clients">Entertaining Business Clients</option>
+                            <option value="free-time">My Free Time</option>
+                            <option value="green-places">Green Places</option>
+                            <option value="home-sweet-home">Home Sweet Home</option>
+                            <option value="how-do-you-spend-your-weekends">How Do You Spend Your Weekends?</option>
+                            <option value="i-can-do-it">I Can Do It</option>
+                            <option value="i-have-been-to">I Have Been To</option>
+                            <option value="important-dates">Important Dates</option>
+                            <option value="in-the-picture">In the Picture</option>
+                            <option value="like-look-like-be-like">Like, Look Like, Be Like</option>
+                            <option value="losing-everyday-objects">Losing Everyday Objects</option>
+                            <option value="making-appointments">Making Appointments</option>
+                            <option value="my-family">My Family</option>
+                            <option value="on-the-calendar">On the Calendar</option>
+                            <option value="on-vacation">On Vacation</option>
+                            <option value="on-your-desk">On Your Desk</option>
+                            <option value="prepare-and-cook-food">Prepare and Cook Food</option>
+                            <option value="problems-at-work">Problems at Work</option>
+                            <option value="questions-questions">Questions, Questions</option>
+                            <option value="questions-relative-pronouns">Questions</option>
+                            <option value="robots">Robots</option>
+                            <option value="safari-park">Safari Park</option>
+                            <option value="shopping-for-clothes">Shopping for Clothes</option>
+                            <option value="signs">Signs</option>
+                            <option value="signs-modal-of-permission">Signs</option>
+                            <option value="silent-letters">Silent Letters</option>
+                            <option value="something-to-eat">Something to Eat</option>
+                            <option value="sounding-polite">Sounding Polite</option>
+                            <option value="staying-at-hotel">Staying at a Hotel</option>
+                            <option value="summer-words">Summer Words</option>
+                            <option value="sweet-things">Sweet Things</option>
+                            <option value="sweet-tooth">Sweet Tooth</option>
+                            <option value="the-bathroom">The Bathroom</option>
+                            <option value="the-kitchen">The Kitchen</option>
+                            <option value="this-is-your-life">This is Your Life</option>
+                            <option value="time-of-the-day">Time of the Day</option>
+                            <option value="walking-day">The Walking Day</option>
+                            <option value="weekends">Weekends</option>
+                            <option value="what-time">What Time Is It</option>
+                            <option value="where-in-the-world">Where in the World</option>
+                        </select>
+                        
+                        <!-- A2/B1 Topics Dropdown -->
+                        <select id="lesson-topics-a2-b1" name="lesson-topics-a2-b1">
+                            <option value="" disabled selected>Select a topic</option>
+                            <option value="amazing-nature">Amazing Nature</option>
+                            <option value="an-astronaut">An Astronaut</option>
+                            <option value="animals-on-the-move">Animals on the Move</option>
+                            <option value="better-faster-stronger">Better - Faster - Stronger</option>
+                            <option value="booking-a-vacation">Booking a Vacation</option>
+                            <option value="breaking-the-news">Breaking the News</option>
+                            <option value="burguer-fries-shakes">Burguer, Fries, Shakes</option>
+                            <option value="business-meetings">Business Meetings</option>
+                            <option value="cuban-crocodiles">Cuban Crocodiles</option>
+                            <option value="climate-changes">Climate Changes</option>
+                            <option value="common-expressions-2">Common Expressions 2</option>
+                            <option value="describing-your-neighbour">Describing Your Neighbour</option>
+                            <option value="discussing-things-in-common">Discussing Things in Common</option>
+                            <option value="entertainment-and-media">Entertainment and Media</option>
+                            <option value="everyone-has-it-but-no-one-can-lose-it">Everyone Has It But No One Can Lose It</option>
+                            <option value="fall">Fall</option>
+                            <option value="fables">Fables</option>
+                            <option value="fashion-forward">Fashion Forward</option>
+                            <option value="friendly-emails">Friendly Emails</option>
+                            <option value="go-for-it">Go For It</option>
+                            <option value="good-news-or-bad-news">Good News or Bad News</option>
+                            <option value="having-a-bad-day">Having a Bad Day</option>
+                            <option value="hobbies-and-leisure">Hobbies and Leisure</option>
+                            <option value="hotel-reservations">Hotel Reservations</option>
+                            <option value="house-and-home">House and Home</option>
+                            <option value="how-medicine-works">How Medicine Works</option>
+                            <option value="i-have-a-suggestion">I Have a Suggestion</option>
+                            <option value="i-wish-i-had-better-news">I Wish I Had Better News</option>
+                            <option value="im-not-sure">I'm Not Sure</option>
+                            <option value="in-the-forest">In the Forest</option>
+                            <option value="international-air-travel">International Air Travel</option>
+                            <option value="language-for-learning">Language for Learning</option>
+                            <option value="living-in-a-space-station">Living in a Space Station</option>
+                            <option value="looking-at-the-sky">Looking at the Sky</option>
+                            <option value="medicine-for-healthcare-professionals">Medicine for Healthcare Professionals</option>
+                            <option value="medicine-for-healthcare-professionals-3">Medicine for Healthcare Professionals 3</option>
+                            <option value="money-vocabulary">Money Vocabulary</option>
+                            <option value="mobile-phone">Mobile Phone</option>
+                            <option value="my-life-journey">My Life Journey</option>
+                            <option value="my-team">My Team</option>
+                            <option value="new-people">New People</option>
+                            <option value="northern-lights">Northern Lights</option>
+                            <option value="office-devices">Office Devices</option>
+                            <option value="out-and-about">Out and About</option>
+                            <option value="parts-of-the-body">Parts of the Body</option>
+                            <option value="passwords">Passwords</option>
+                            <option value="phone-calls">Phone Calls</option>
+                            <option value="places-and-buildings">Places and Buildings</option>
+                            <option value="planning-a-weekend-away">Planning a Weekend Away</option>
+                            <option value="predicting-the-future">Predicting the Future</option>
+                            <option value="question-time">Question Time</option>
+                            <option value="referring-a-patient">Referring a Patient</option>
+                            <option value="saying-sorry">Saying Sorry</option>
+                            <option value="schooling">Schooling</option>
+                            <option value="self-driven-cars">Self Driven Cars</option>
+                            <option value="space-exploration">Space Exploration</option>
+                            <option value="stores-and-services">Stores and Services</option>
+                            <option value="take-one-of-these-twice-a-day">Take One of These Twice a Day</option>
+                            <option value="talking-about-special-occasions">Talking About Special Occasions</option>
+                            <option value="talking-about-travel-experiences">Talking About Travel Experiences</option>
+                            <option value="telling-the-family">Telling the Family</option>
+                            <option value="the-business-meeting">The Business Meeting</option>
+                            <option value="the-coldest-continent">The Coldest Continent</option>
+                            <option value="the-hottest-continent">The Hottest Continent</option>
+                            <option value="the-history-of-toys">The History of Toys</option>
+                            <option value="someone-who-knows-how-to-cheer-your-day-up">How to Cheer Your Day Up</option>
+                            <option value="the-royals">The Royals</option>
+                            <option value="the-wonders-of-winter">The Wonders of Winter</option>
+                            <option value="updating-medical-records">Updating Medical Records</option>
+                            <option value="vacations-and-travel">Vacations and Travel</option>
+                            <option value="weather-and-climate">Weather and Climate</option>
+                            <option value="weather-situations">Weather Situations</option>
+                            <option value="well-being">Well Being</option>
+                            <option value="where-is-my-cellphone">Where Is My Cellphone</option>
+                            <option value="whats-that-for">What's That For</option>
+                            <option value="word-games">Word Games</option>
+                            <option value="world-records">World Records</option>
+                        </select>
+                        
+                        <!-- B1/B2 Topics Dropdown -->
+                        <select id="lesson-topics-b1-b2" name="lesson-topics-b1-b2">
+                            <option value="" disabled selected>Select a topic</option>
+                            <option value="5-dangerous-things">5 Dangerous Things You Should ...</option>
+                            <option value="apologies-excuses-promises">Apologies, Excuses, and Promises</option>
+                            <option value="both-hands-on-the-wheel">Both Hands on the Wheel</option>
+                            <option value="bucket-list">Bucket List</option>
+                            <option value="business-dress-code">Business Dress Code</option>
+                            <option value="business-jargon">Business Jargon</option>
+                            <option value="california">California</option>
+                            <option value="car-problems">Car Problems</option>
+                            <option value="closing-a-deal">Closing a Deal</option>
+                            <option value="comfort-food">Comfort Food</option>
+                            <option value="common-expressions-in-business">Common Expressions in Business</option>
+                            <option value="company-and-jobs">Company and Jobs</option>
+                            <option value="complex-prepositions">Complex Prepositions</option>
+                            <option value="contracts">Contracts</option>
+                            <option value="cross-cultural-communication">Cross Cultural Communication</option>
+                            <option value="describing-coworkers">Describing Coworkers</option>
+                            <option value="direct-and-indirect-questions-in-business">Direct and Indirect Questions in Business</option>
+                            <option value="do-we-need-each-other">Do We Need Each Other</option>
+                            <option value="easy-as-abc">Easy as ABC</option>
+                            <option value="ecotourism">Ecotourism</option>
+                            <option value="english-as-a-world-language">English as a World Language</option>
+                            <option value="ethics-and-conduct">Ethics and Conduct</option>
+                            <option value="expenses">Expenses</option>
+                            <option value="finland">Finland</option>
+                            <option value="flying-for-business">Flying for Business</option>
+                            <option value="florida">Florida</option>
+                            <option value="gadgets-and-appliances">Gadgets and Appliances</option>
+                            <option value="galapagos-islands">Galapagos Islands</option>
+                            <option value="generation-linkster">Generation Linkster</option>
+                            <option value="getting-to-know-someone">Getting to Know Someone</option>
+                            <option value="global-economy">Global Economy</option>
+                            <option value="global-english-in-the-business-world">Global English in the Business World</option>
+                            <option value="going-cashless">Going Cashless</option>
+                            <option value="got-a-meeting-take-a-walk">Got a Meeting Take a Walk</option>
+                            <option value="hello-im-on-the-plane">Hello, I'm on the Plane</option>
+                            <option value="home-improvements">Home Improvements</option>
+                            <option value="how-we-see-each-other">How We See Each Other</option>
+                            <option value="how-to-buy-happiness">How to Buy Happiness</option>
+                            <option value="idioms">Idioms</option>
+                            <option value="innovation-and-product-development">Innovation and Product Development</option>
+                            <option value="international-trade">International Trade</option>
+                            <option value="introductions">Introductions</option>
+                            <option value="instapoets">Instapoets</option>
+                            <option value="iris-apfel">Iris Apfel</option>
+                            <option value="isaac-newton">Isaac Newton</option>
+                            <option value="liar-liar">Liar, Liar</option>
+                            <option value="life">Life</option>
+                            <option value="longevity">Longevity</option>
+                            <option value="love-at-first-byte">Love at First Byte</option>
+                            <option value="love-languages">Love Languages</option>
+                            <option value="managing-cultural-differences">Managing Cultural Differences</option>
+                            <option value="marketing-strategies">Marketing Strategies</option>
+                            <option value="metro-stress">Metro Stress</option>
+                            <option value="mixed-conditions-for-business">Mixed Conditions for Business</option>
+                            <option value="mixed-signals-for-outsourcing">Mixed Signals for Outsourcing</option>
+                            <option value="money-and-banking">Money and Banking</option>
+                            <option value="morocco">Morocco</option>
+                            <option value="motivation">Motivation</option>
+                            <option value="moving-to-a-new-country">Moving to a New Country</option>
+                            <option value="musical-connections">Musical Connections</option>
+                            <option value="negotiations">Negotiations</option>
+                            <option value="night">Night</option>
+                            <option value="on-the-run">On the Run</option>
+                            <option value="origins-of-christmas">Origins of Christmas</option>
+                            <option value="our-future">Our Future</option>
+                            <option value="paraguay">Paraguay</option>
+                            <option value="performance-appraisals">Performance Appraisals</option>
+                            <option value="planning-ahead">Planning Ahead</option>
+                            <option value="planning-presentations">Planning Presentations</option>
+                            <option value="placebo-effect">Placebo Effect</option>
+                            <option value="planes-trains-and-automobiles">Planes, Trains, and Automobiles</option>
+                            <option value="predicting-the-future">Predicting the Future</option>
+                            <option value="project-management">Project Management</option>
+                            <option value="queen-elizabeth">Queen Elizabeth</option>
+                            <option value="quito">Quito</option>
+                            <option value="rails">Rails</option>
+                            <option value="referring-a-patient">Referring a Patient</option>
+                            <option value="safety-first">Safety First</option>
+                            <option value="save-our-sea">Save Our Sea</option>
+                            <option value="science-for-all">Science for All</option>
+                            <option value="side-jobs">Side Jobs</option>
+                            <option value="slow-television">Slow Television</option>
+                            <option value="small-talk">Small Talk</option>
+                            <option value="smog-war">Smog War</option>
+                            <option value="solo-adventurers">Solo Adventurers</option>
+                            <option value="space-travel">Space Travel</option>
+                            <option value="statistics-and-trends">Statistics and Trends</option>
+                            <option value="steve-jobs">Steve Jobs</option>
+                            <option value="suggesting-ideas">Suggesting Ideas</option>
+                            <option value="taking-time-out-from-your-relationship">Taking Time Out from Your Relationship</option>
+                            <option value="telephone-messages">Telephone Messages</option>
+                            <option value="the-career-ladder">The Career Ladder</option>
+                            <option value="the-danish-way-of-living">The Danish Way of Living</option>
+                            <option value="the-golden-years">The Golden Years</option>
+                            <option value="the-heros-journey">The Hero's Journey</option>
+                            <option value="the-most-dangerous-journey-on-earth">The Most Dangerous Journey on Earth</option>
+                            <option value="the-secret-world-of-mammals">The Secret World of Mammals</option>
+                            <option value="the-selfie-revolution">The Selfie Revolution</option>
+                            <option value="the-wonders-of-the-world">The Wonders of the World</option>
+                            <option value="travel-photography">Travel Photography</option>
+                            <option value="uber-and-the-law">Uber and the Law</option>
+                            <option value="unusual-jobs">Unusual Jobs</option>
+                            <option value="velocipede">Velocipede</option>
+                            <option value="vietnam">Vietnam</option>
+                            <option value="visiting-brazil">Visiting Brazil</option>
+                            <option value="visiting-italy">Visiting Italy</option>
+                            <option value="visiting-spain">Visiting Spain</option>
+                            <option value="war-and-conflict">War and Conflict</option>
+                            <option value="weather-and-climate">Weather and Climate</option>
+                            <option value="weather-situations">Weather Situations</option>
+                            <option value="welcome-to-the-team">Welcome to the Team</option>
+                            <option value="what-if">What If</option>
+                            <option value="why-do-we-love">Why Do We Love</option>
+                            <option value="why-learn-business">Why Learn Business</option>
+                            <option value="work-clothes">Work Clothes</option>
+                            <option value="work-words">Work Words</option>
+                            <option value="writing-informal-business-emails">Writing Informal Business Emails</option>
+                        </select>                    
+    
+                        <!-- B2/C1 Topics Dropdown -->
+                        <select id="lesson-topics-b2-c1" name="lesson-topics-b2-c1">
+                            <option value="" disabled selected>Select a topic</option>
+                            <option value="a-lucky-find">A Lucky Find</option>
+                            <option value="all-about-poop">All About Poop</option>
+                            <option value="asking-about-figures">Asking About Figures</option>
+                            <option value="body-language">Body Language</option>
+                            <option value="building-the-hoover-dam">Building the Hoover Dam</option>
+                            <option value="business-idioms">Business Idioms</option>
+                            <option value="changing-behaviour">Changing Behaviour</option>
+                            <option value="christmas-music">Christmas Music</option>
+                            <option value="combined-efforts">Combined Efforts</option>
+                            <option value="communicating-with-colleagues">Communicating with Colleagues</option>
+                            <option value="communicating-with-management">Communicating with Management</option>
+                            <option value="correcting-errors">Correcting Errors</option>
+                            <option value="cosplay-and-the-wing-maker">Cosplay and the Wing Maker</option>
+                            <option value="crime-and-punishment">Crime and Punishment</option>
+                            <option value="cyber-crime">Cyber Crime</option>
+                            <option value="djokovic-faces-deportation">Djokovic Faces Deportation</option>
+                            <option value="do-you-feel-fomo">Do You Feel FOMO</option>
+                            <option value="dress-code">Dress Code</option>
+                            <option value="excuses-excuses-excuses">Excuses, Excuses, Excuses</option>
+                            <option value="fake-photos">Fake Photos</option>
+                            <option value="finding-accommodation">Finding Accommodation</option>
+                            <option value="finding-work">Finding Work</option>
+                            <option value="food-waste">Food Waste</option>
+                            <option value="friendship-and-the-theory-of-mind">Friendship and the Theory of Mind</option>
+                            <option value="from-stingy-to-flashy">From Stingy to Flashy</option>
+                            <option value="get-the-picture">Get the Picture</option>
+                            <option value="grammar-guru">Grammar Guru</option>
+                            <option value="half-a-million-secrets">Half a Million Secrets</option>
+                            <option value="handsignal-saves-teenager">Handsignal Saves Teenager</option>
+                            <option value="happy-new-year">Happy New Year</option>
+                            <option value="helping-employees-with-disabilities">Helping Employees with Disabilities</option>
+                            <option value="hip-hop-beginnings">Hip Hop Beginnings</option>
+                            <option value="how-do-you-want-the-world-to-see-you">How Do You Want the World to See You</option>
+                            <option value="legal-vocabulary-in-use">Legal Vocabulary in Use</option>
+                            <option value="making-assumptions">Making Assumptions</option>
+                            <option value="managing-expansion">Managing Expansion</option>
+                            <option value="manslaughter">Manslaughter</option>
+                            <option value="measuring-productivity">Measuring Productivity</option>
+                            <option value="medical-english-review">Medical English Review</option>
+                            <option value="memory-tricks-linking-method">Memory Tricks Linking Method</option>
+                            <option value="modern-day-nomads">Modern-day Nomads</option>
+                            <option value="mompreneurs">Mompreneurs</option>
+                            <option value="movie-night">Movie Night</option>
+                            <option value="mukbang-great-or-gross">Mukbang Great or Gross</option>
+                            <option value="narcissism">Narcissism</option>
+                            <option value="negotiating-deals">Negotiating Deals</option>
+                            <option value="networking">Networking</option>
+                            <option value="office-speak">Office Speak</option>
+                            <option value="pass-the-wallet">Pass the Wallet</option>
+                            <option value="psychedelic-therapy">Psychedelic Therapy</option>
+                            <option value="quit-your-job-but-save-your-career">Quit Your Job but Save Your Career</option>
+                            <option value="reflect-on-speaking">Reflect on Speaking</option>
+                            <option value="reflect-on-the-use-of-english">Reflect on the Use of English</option>
+                            <option value="reflect-on-writing">Reflect on Writing</option>
+                            <option value="regrets">Regrets</option>
+                            <option value="reasons-for-leaving">Reasons for Leaving</option>
+                            <option value="reusing-and-recycling">Reusing and Recycling</option>
+                            <option value="revocation-and-relocation">Revocation and Relocation</option>
+                            <option value="second-year-blues">Second Year Blues</option>
+                            <option value="sight-reading">Sight Reading</option>
+                            <option value="solo-travel">Solo Travel</option>
+                            <option value="starting-and-running-a-small-business">Starting and Running a Small Business</option>
+                            <option value="the-body-keeps-the-score">The Body Keeps the Score</option>
+                            <option value="the-dawning-of-the-megastructure">The Dawning of the Megastructure</option>
+                            <option value="the-future-of-spaceflight">The Future of Spaceflight</option>
+                            <option value="the-halo-effect">The Halo Effect</option>
+                            <option value="the-limits-of-human-memory">The Limits of Human Memory</option>
+                            <option value="the-richard-branson-interview-part-2">The Richard Branson Interview - Part 2</option>
+                            <option value="the-right-age-for-a-smartphone">The Right Age for a Smartphone</option>
+                            <option value="the-most-dangerous-journey-on-earth">The Most Dangerous Journey on Earth</option>
+                            <option value="visiting-ghana">Visiting Ghana</option>
+                            <option value="visiting-brazil">Visiting Brazil</option>
+                            <option value="visiting-italy">Visiting Italy</option>
+                            <option value="waiting-in-line">Waiting in Line</option>
+                            <option value="weird-or-normal">Weird or Normal</option>
+                            <option value="what-if">What If</option>
+                            <option value="what-makes-you-laugh">What Makes You Laugh</option>
+                            <option value="what-why-how">What Why How</option>
+                            <option value="when-are-you-an-adult">When Are You an Adult</option>
+                            <option value="why-algospeak">Why Algospeak</option>
+                            <option value="why-do-we-glamorize-overwork">Why Do We Glamorize Overwork</option>
+                            <option value="why-do-we-take-selfies">Why Do We Take Selfies</option>
+                            <option value="why-its-cool-to-be-kind">Why It's Cool to Be Kind</option>
+                            <option value="would-you-walk-your-dog-around-the-world">Would You Walk Your Dog Around the World</option>
+                        </select>                  
+                      
+                        <!-- C1/C2 Topics Dropdown -->
+                        <select id="lesson-topics-c1-c2" name="lesson-topics-c1-c2">
+                            <option value="" disabled selected>Select a topic</option>
+                            <option value="annapurna-the-goddess-of-plenty">Annapurna: The Goddess of Plenty</option>
+                            <option value="building-the-hoover-dam">Building the Hoover Dam</option>
+                            <option value="buying-into-the-culture">Buying into the Culture</option>
+                            <option value="call-of-the-wild">Call of the Wild</option>
+                            <option value="chinas-terracotta-warriors">China’s Terracotta Warriors</option>
+                            <option value="clinical-oncology">Clinical Oncology</option>
+                            <option value="describing-symptoms">Describing Symptoms</option>
+                            <option value="diabetes">Diabetes</option>
+                            <option value="female-breadwinners">Female Breadwinners</option>
+                            <option value="grammar-school">Grammar School</option>
+                            <option value="hot-gossip">Hot Gossip</option>
+                            <option value="mindfulness">Mindfulness</option>
+                            <option value="mix-it-up">Mix It Up</option>
+                            <option value="nutritional-health">Nutritional Health</option>
+                            <option value="placebo-power">Placebo Power</option>
+                            <option value="reducing-errors">Reducing Errors</option>
+                            <option value="reflect-on-reading">Reflect on Reading</option>
+                            <option value="squeaky-clean">Squeaky Clean</option>
+                            <option value="teething-troubles">Teething Troubles</option>
+                            <option value="the-beginnings-of-comedy">The Beginnings of Comedy</option>
+                            <option value="the-book">The Book</option>
+                            <option value="the-dark-side-of-mindfulness">The Dark Side of Mindfulness</option>
+                            <option value="the-decline-of-digital-nomad">The Decline of Digital Nomad</option>
+                            <option value="the-sweet-smell-of-success">The Sweet Smell of Success</option>
+                            <option value="tourism-and-politics">Tourism and Politics</option>
+                            <option value="treasure-caves">Treasure Caves</option>
+                            <option value="when-a-crisis-strikes-a-good-leader">When a Crisis Strikes a Good Leader</option>
+                            <option value="your-place-in-space">Your Place in Space</option>
+                        </select>
+    
+                        <!-- Teacher Dropdown -->
+                        <select id="teacher-name" name="teacher-name">
+                            <option value="" disabled selected>Teacher</option>
+                            <option value="ana-beatriz">Ana Beatriz</option>
+                            <option value="ana-leticia">Ana Letícia</option>
+                            <option value="bella">Bella</option>
+                            <option value="carol">Carol</option>
+                            <option value="charles">Charles</option>
+                            <option value="deluca">Deluca</option>
+                            <option value="debora">Débora</option>
+                            <option value="fred">Fred</option>
+                            <option value="icaro">Icaro</option>
+                            <option value="julia">Julia</option>
+                            <option value="leandro">Leandro</option>
+                            <option value="lesley">Lesley</option>
+                            <option value="livia">Livia</option>
+                            <option value="lucas">Lucas</option>
+                            <option value="nino">Nino</option>
+                            <option value="priscilla">Priscilla</option>
+                            <option value="ricardo">Ricardo</option>
+                            <option value="samuel">Samuel</option>
+                            <option value="thiago-fo">Thiago</option>
+                            <option value="vickie">Vickie</option>
+                            <option value="yanice">Yanice</option>
+                        </select>
+                    </form>
+                    <!-- Comment Button -->
+                    <button id="comment-btn" type="button">
+                        <img src="images/icons/chat-box.png" alt="Add a comment here!">
+                    </button>
+    
+                    <!-- Comment Popup -->
+                    <div id="comment-modal" class="modal">
+                        <div class="modal-content">
+                            <span class="close-btn">&times;</span>
+                            <h3>Class Instructions</h3>
+                            <textarea id="comment-text" placeholder="Write instructions for the class..." rows="5"></textarea>
+                            <button id="save-comment">Save</button>
+                        </div>
                     </div>
-                    
-                    <!-- Student Name -->
-                    <div class="form-items">
-                        <label for="student-name">Student's Name</label>
-                        <input type="text" id="student-name" name="student-name">
-                    </div>
-
-                    <!-- Student's Level -->
-                    <select id="student-level" name="student-level">
-                        <option value="" disabled selected>Level</option>
-                        <option value="A1-A2">A1 — A2</option>
-                        <option value="A2-B1">A2 — B1</option>
-                        <option value="B1-B2">B1 — B2</option>
-                        <option value="B2-C1">B2 — C1</option>
-                        <option value="C1-C2">C1 — C2</option>
-                    </select>
-
-                    <!-- Class Type Dropdown -->
-                    <select id="class-type" name="class-type">
-                        <option value="" disabled selected>Class Type</option>
-                        <option value="Flight">Flight</option>
-                        <option value="Levelling">Levelling</option>
-                        <option value="-">-</option>
-                        <option value="Conversation-esl">Conversation (E)</option>
-                        <option value="Conversation-free">Conversation (F)</option>
-                        <option value="Conversation-grammar">Conversation (G)</option>
-                    </select>
-
-                    <!-- Flight Number Dropdown -->
-                    <select id="number-list">
-                        <option value="" disabled selected>Flight #</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
-                        <option value="9">9</option>
-                        <option value="10">10</option>
-                        <option value="11">11</option>
-                        <option value="12">12</option>
-                        <option value="13">13</option>
-                        <option value="14">14</option>
-                        <option value="15">15</option>
-                        <option value="16">16</option>
-                        <option value="17">17</option>
-                        <option value="18">18</option>
-                        <option value="19">19</option>
-                        <option value="20">20</option>
-                        <option value="21">21</option>
-                        <option value="22">22</option>
-                        <option value="23">23</option>
-                        <option value="24">24</option>
-                        <option value="25">25</option>
-                        <option value="26">26</option>
-                        <option value="27">27</option>
-                        <option value="28">28</option>
-                        <option value="29">29</option>
-                        <option value="30">30</option>
-                        <option value="31">31</option>
-                        <option value="32">32</option>
-                        <option value="33">33</option>
-                        <option value="34">34</option>
-                        <option value="35">35</option>
-                        <option value="36">36</option>
-                        <option value="37">37</option>
-                        <option value="38">38</option>
-                        <option value="39">39</option>
-                        <option value="40">40</option>
-                        <option value="41">41</option>
-                        <option value="42">42</option>
-                        <option value="43">43</option>
-                        <option value="44">44</option>
-                        <option value="45">45</option>
-                        <option value="46">46</option>
-                        <option value="47">47</option>
-                        <option value="48">48</option>
-                        <option value="49">49</option>
-                        <option value="50">50</option>
-                        <option value="51">51</option>
-                        <option value="52">52</option>
-                        <option value="53">53</option>
-                        <option value="54">54</option>
-                        <option value="55">55</option>
-                        <option value="56">56</option>
-                        <option value="57">57</option>
-                        <option value="58">58</option>
-                        <option value="59">59</option>
-                        <option value="60">60</option>
-                        <option value="61">61</option>
-                        <option value="62">62</option>
-                        <option value="63">63</option>
-                        <option value="64">64</option>
-                        <option value="65">65</option>
-                        <option value="66">66</option>
-                        <option value="67">67</option>
-                        <option value="68">68</option>
-                        <option value="69">69</option>
-                        <option value="70">70</option>
-                        <option value="71">71</option>
-                        <option value="72">72</option>
-                        <option value="73">73</option>
-                        <option value="74">74</option>
-                        <option value="75">75</option>
-                        <option value="76">76</option>
-                        <option value="77">77</option>
-                        <option value="78">78</option>
-                        <option value="79">79</option>
-                        <option value="80">80</option>
-                        <option value="81">81</option>
-                        <option value="82">82</option>
-                        <option value="83">83</option>
-                        <option value="84">84</option>
-                        <option value="85">85</option>
-                        <option value="86">86</option>
-                        <option value="87">87</option>
-                        <option value="88">88</option>
-                        <option value="89">89</option>
-                        <option value="90">90</option>
-                    </select>                    
-
-                    <!-- A1/A2 Topics Dropdown -->
-                    <select id="lesson-topics-a1-a2" name="lesson-topics-a1-a2">
-                        <option value="" disabled selected>Select a topic</option>
-                        <option value="20th-century-lives">20th Century Lives</option>
-                        <option value="a-city-break">A City Break</option>
-                        <option value="a-city-tour">A City Tour</option>
-                        <option value="animals-habitats">Animals and Habitats</option>
-                        <option value="at-the-deli">At the Deli</option>
-                        <option value="breakfast-time">Breakfast Time</option>
-                        <option value="business-people">Business People</option>
-                        <option value="catching-a-bus">Catching a Bus</option>
-                        <option value="christmas-day">Christmas Day</option>
-                        <option value="company-history">Company History</option>
-                        <option value="describing-a-friend">Describing a Friend</option>
-                        <option value="do-we-have-any-onions">Do We Have Any Onions?</option>
-                        <option value="dream-home">What is Your Dream Home</option>
-                        <option value="eat-the-rainbow">Eat the Rainbow</option>
-                        <option value="entertaining-business-clients">Entertaining Business Clients</option>
-                        <option value="free-time">My Free Time</option>
-                        <option value="green-places">Green Places</option>
-                        <option value="home-sweet-home">Home Sweet Home</option>
-                        <option value="how-do-you-spend-your-weekends">How Do You Spend Your Weekends?</option>
-                        <option value="i-can-do-it">I Can Do It</option>
-                        <option value="i-have-been-to">I Have Been To</option>
-                        <option value="important-dates">Important Dates</option>
-                        <option value="in-the-picture">In the Picture</option>
-                        <option value="like-look-like-be-like">Like, Look Like, Be Like</option>
-                        <option value="losing-everyday-objects">Losing Everyday Objects</option>
-                        <option value="making-appointments">Making Appointments</option>
-                        <option value="my-family">My Family</option>
-                        <option value="on-the-calendar">On the Calendar</option>
-                        <option value="on-vacation">On Vacation</option>
-                        <option value="on-your-desk">On Your Desk</option>
-                        <option value="prepare-and-cook-food">Prepare and Cook Food</option>
-                        <option value="problems-at-work">Problems at Work</option>
-                        <option value="questions-questions">Questions, Questions</option>
-                        <option value="questions-relative-pronouns">Questions</option>
-                        <option value="robots">Robots</option>
-                        <option value="safari-park">Safari Park</option>
-                        <option value="shopping-for-clothes">Shopping for Clothes</option>
-                        <option value="signs">Signs</option>
-                        <option value="signs-modal-of-permission">Signs</option>
-                        <option value="silent-letters">Silent Letters</option>
-                        <option value="something-to-eat">Something to Eat</option>
-                        <option value="sounding-polite">Sounding Polite</option>
-                        <option value="staying-at-hotel">Staying at a Hotel</option>
-                        <option value="summer-words">Summer Words</option>
-                        <option value="sweet-things">Sweet Things</option>
-                        <option value="sweet-tooth">Sweet Tooth</option>
-                        <option value="the-bathroom">The Bathroom</option>
-                        <option value="the-kitchen">The Kitchen</option>
-                        <option value="this-is-your-life">This is Your Life</option>
-                        <option value="time-of-the-day">Time of the Day</option>
-                        <option value="walking-day">The Walking Day</option>
-                        <option value="weekends">Weekends</option>
-                        <option value="what-time">What Time Is It</option>
-                        <option value="where-in-the-world">Where in the World</option>
-                    </select>
-                    
-                    <!-- A2/B1 Topics Dropdown -->
-                    <select id="lesson-topics-a2-b1" name="lesson-topics-a2-b1">
-                        <option value="" disabled selected>Select a topic</option>
-                        <option value="amazing-nature">Amazing Nature</option>
-                        <option value="an-astronaut">An Astronaut</option>
-                        <option value="animals-on-the-move">Animals on the Move</option>
-                        <option value="better-faster-stronger">Better - Faster - Stronger</option>
-                        <option value="booking-a-vacation">Booking a Vacation</option>
-                        <option value="breaking-the-news">Breaking the News</option>
-                        <option value="burguer-fries-shakes">Burguer, Fries, Shakes</option>
-                        <option value="business-meetings">Business Meetings</option>
-                        <option value="cuban-crocodiles">Cuban Crocodiles</option>
-                        <option value="climate-changes">Climate Changes</option>
-                        <option value="common-expressions-2">Common Expressions 2</option>
-                        <option value="describing-your-neighbour">Describing Your Neighbour</option>
-                        <option value="discussing-things-in-common">Discussing Things in Common</option>
-                        <option value="entertainment-and-media">Entertainment and Media</option>
-                        <option value="everyone-has-it-but-no-one-can-lose-it">Everyone Has It But No One Can Lose It</option>
-                        <option value="fall">Fall</option>
-                        <option value="fables">Fables</option>
-                        <option value="fashion-forward">Fashion Forward</option>
-                        <option value="friendly-emails">Friendly Emails</option>
-                        <option value="go-for-it">Go For It</option>
-                        <option value="good-news-or-bad-news">Good News or Bad News</option>
-                        <option value="having-a-bad-day">Having a Bad Day</option>
-                        <option value="hobbies-and-leisure">Hobbies and Leisure</option>
-                        <option value="hotel-reservations">Hotel Reservations</option>
-                        <option value="house-and-home">House and Home</option>
-                        <option value="how-medicine-works">How Medicine Works</option>
-                        <option value="i-have-a-suggestion">I Have a Suggestion</option>
-                        <option value="i-wish-i-had-better-news">I Wish I Had Better News</option>
-                        <option value="im-not-sure">I'm Not Sure</option>
-                        <option value="in-the-forest">In the Forest</option>
-                        <option value="international-air-travel">International Air Travel</option>
-                        <option value="language-for-learning">Language for Learning</option>
-                        <option value="living-in-a-space-station">Living in a Space Station</option>
-                        <option value="looking-at-the-sky">Looking at the Sky</option>
-                        <option value="medicine-for-healthcare-professionals">Medicine for Healthcare Professionals</option>
-                        <option value="medicine-for-healthcare-professionals-3">Medicine for Healthcare Professionals 3</option>
-                        <option value="money-vocabulary">Money Vocabulary</option>
-                        <option value="mobile-phone">Mobile Phone</option>
-                        <option value="my-life-journey">My Life Journey</option>
-                        <option value="my-team">My Team</option>
-                        <option value="new-people">New People</option>
-                        <option value="northern-lights">Northern Lights</option>
-                        <option value="office-devices">Office Devices</option>
-                        <option value="out-and-about">Out and About</option>
-                        <option value="parts-of-the-body">Parts of the Body</option>
-                        <option value="passwords">Passwords</option>
-                        <option value="phone-calls">Phone Calls</option>
-                        <option value="places-and-buildings">Places and Buildings</option>
-                        <option value="planning-a-weekend-away">Planning a Weekend Away</option>
-                        <option value="predicting-the-future">Predicting the Future</option>
-                        <option value="question-time">Question Time</option>
-                        <option value="referring-a-patient">Referring a Patient</option>
-                        <option value="saying-sorry">Saying Sorry</option>
-                        <option value="schooling">Schooling</option>
-                        <option value="self-driven-cars">Self Driven Cars</option>
-                        <option value="space-exploration">Space Exploration</option>
-                        <option value="stores-and-services">Stores and Services</option>
-                        <option value="take-one-of-these-twice-a-day">Take One of These Twice a Day</option>
-                        <option value="talking-about-special-occasions">Talking About Special Occasions</option>
-                        <option value="talking-about-travel-experiences">Talking About Travel Experiences</option>
-                        <option value="telling-the-family">Telling the Family</option>
-                        <option value="the-business-meeting">The Business Meeting</option>
-                        <option value="the-coldest-continent">The Coldest Continent</option>
-                        <option value="the-hottest-continent">The Hottest Continent</option>
-                        <option value="the-history-of-toys">The History of Toys</option>
-                        <option value="someone-who-knows-how-to-cheer-your-day-up">How to Cheer Your Day Up</option>
-                        <option value="the-royals">The Royals</option>
-                        <option value="the-wonders-of-winter">The Wonders of Winter</option>
-                        <option value="updating-medical-records">Updating Medical Records</option>
-                        <option value="vacations-and-travel">Vacations and Travel</option>
-                        <option value="weather-and-climate">Weather and Climate</option>
-                        <option value="weather-situations">Weather Situations</option>
-                        <option value="well-being">Well Being</option>
-                        <option value="where-is-my-cellphone">Where Is My Cellphone</option>
-                        <option value="whats-that-for">What's That For</option>
-                        <option value="word-games">Word Games</option>
-                        <option value="world-records">World Records</option>
-                    </select>
-                    
-                    <!-- B1/B2 Topics Dropdown -->
-                    <select id="lesson-topics-b1-b2" name="lesson-topics-b1-b2">
-                        <option value="" disabled selected>Select a topic</option>
-                        <option value="5-dangerous-things">5 Dangerous Things You Should ...</option>
-                        <option value="apologies-excuses-promises">Apologies, Excuses, and Promises</option>
-                        <option value="both-hands-on-the-wheel">Both Hands on the Wheel</option>
-                        <option value="bucket-list">Bucket List</option>
-                        <option value="business-dress-code">Business Dress Code</option>
-                        <option value="business-jargon">Business Jargon</option>
-                        <option value="california">California</option>
-                        <option value="car-problems">Car Problems</option>
-                        <option value="closing-a-deal">Closing a Deal</option>
-                        <option value="comfort-food">Comfort Food</option>
-                        <option value="common-expressions-in-business">Common Expressions in Business</option>
-                        <option value="company-and-jobs">Company and Jobs</option>
-                        <option value="complex-prepositions">Complex Prepositions</option>
-                        <option value="contracts">Contracts</option>
-                        <option value="cross-cultural-communication">Cross Cultural Communication</option>
-                        <option value="describing-coworkers">Describing Coworkers</option>
-                        <option value="direct-and-indirect-questions-in-business">Direct and Indirect Questions in Business</option>
-                        <option value="do-we-need-each-other">Do We Need Each Other</option>
-                        <option value="easy-as-abc">Easy as ABC</option>
-                        <option value="ecotourism">Ecotourism</option>
-                        <option value="english-as-a-world-language">English as a World Language</option>
-                        <option value="ethics-and-conduct">Ethics and Conduct</option>
-                        <option value="expenses">Expenses</option>
-                        <option value="finland">Finland</option>
-                        <option value="flying-for-business">Flying for Business</option>
-                        <option value="florida">Florida</option>
-                        <option value="gadgets-and-appliances">Gadgets and Appliances</option>
-                        <option value="galapagos-islands">Galapagos Islands</option>
-                        <option value="generation-linkster">Generation Linkster</option>
-                        <option value="getting-to-know-someone">Getting to Know Someone</option>
-                        <option value="global-economy">Global Economy</option>
-                        <option value="global-english-in-the-business-world">Global English in the Business World</option>
-                        <option value="going-cashless">Going Cashless</option>
-                        <option value="got-a-meeting-take-a-walk">Got a Meeting Take a Walk</option>
-                        <option value="hello-im-on-the-plane">Hello, I'm on the Plane</option>
-                        <option value="home-improvements">Home Improvements</option>
-                        <option value="how-we-see-each-other">How We See Each Other</option>
-                        <option value="how-to-buy-happiness">How to Buy Happiness</option>
-                        <option value="idioms">Idioms</option>
-                        <option value="innovation-and-product-development">Innovation and Product Development</option>
-                        <option value="international-trade">International Trade</option>
-                        <option value="introductions">Introductions</option>
-                        <option value="instapoets">Instapoets</option>
-                        <option value="iris-apfel">Iris Apfel</option>
-                        <option value="isaac-newton">Isaac Newton</option>
-                        <option value="liar-liar">Liar, Liar</option>
-                        <option value="life">Life</option>
-                        <option value="longevity">Longevity</option>
-                        <option value="love-at-first-byte">Love at First Byte</option>
-                        <option value="love-languages">Love Languages</option>
-                        <option value="managing-cultural-differences">Managing Cultural Differences</option>
-                        <option value="marketing-strategies">Marketing Strategies</option>
-                        <option value="metro-stress">Metro Stress</option>
-                        <option value="mixed-conditions-for-business">Mixed Conditions for Business</option>
-                        <option value="mixed-signals-for-outsourcing">Mixed Signals for Outsourcing</option>
-                        <option value="money-and-banking">Money and Banking</option>
-                        <option value="morocco">Morocco</option>
-                        <option value="motivation">Motivation</option>
-                        <option value="moving-to-a-new-country">Moving to a New Country</option>
-                        <option value="musical-connections">Musical Connections</option>
-                        <option value="negotiations">Negotiations</option>
-                        <option value="night">Night</option>
-                        <option value="on-the-run">On the Run</option>
-                        <option value="origins-of-christmas">Origins of Christmas</option>
-                        <option value="our-future">Our Future</option>
-                        <option value="paraguay">Paraguay</option>
-                        <option value="performance-appraisals">Performance Appraisals</option>
-                        <option value="planning-ahead">Planning Ahead</option>
-                        <option value="planning-presentations">Planning Presentations</option>
-                        <option value="placebo-effect">Placebo Effect</option>
-                        <option value="planes-trains-and-automobiles">Planes, Trains, and Automobiles</option>
-                        <option value="predicting-the-future">Predicting the Future</option>
-                        <option value="project-management">Project Management</option>
-                        <option value="queen-elizabeth">Queen Elizabeth</option>
-                        <option value="quito">Quito</option>
-                        <option value="rails">Rails</option>
-                        <option value="referring-a-patient">Referring a Patient</option>
-                        <option value="safety-first">Safety First</option>
-                        <option value="save-our-sea">Save Our Sea</option>
-                        <option value="science-for-all">Science for All</option>
-                        <option value="side-jobs">Side Jobs</option>
-                        <option value="slow-television">Slow Television</option>
-                        <option value="small-talk">Small Talk</option>
-                        <option value="smog-war">Smog War</option>
-                        <option value="solo-adventurers">Solo Adventurers</option>
-                        <option value="space-travel">Space Travel</option>
-                        <option value="statistics-and-trends">Statistics and Trends</option>
-                        <option value="steve-jobs">Steve Jobs</option>
-                        <option value="suggesting-ideas">Suggesting Ideas</option>
-                        <option value="taking-time-out-from-your-relationship">Taking Time Out from Your Relationship</option>
-                        <option value="telephone-messages">Telephone Messages</option>
-                        <option value="the-career-ladder">The Career Ladder</option>
-                        <option value="the-danish-way-of-living">The Danish Way of Living</option>
-                        <option value="the-golden-years">The Golden Years</option>
-                        <option value="the-heros-journey">The Hero's Journey</option>
-                        <option value="the-most-dangerous-journey-on-earth">The Most Dangerous Journey on Earth</option>
-                        <option value="the-secret-world-of-mammals">The Secret World of Mammals</option>
-                        <option value="the-selfie-revolution">The Selfie Revolution</option>
-                        <option value="the-wonders-of-the-world">The Wonders of the World</option>
-                        <option value="travel-photography">Travel Photography</option>
-                        <option value="uber-and-the-law">Uber and the Law</option>
-                        <option value="unusual-jobs">Unusual Jobs</option>
-                        <option value="velocipede">Velocipede</option>
-                        <option value="vietnam">Vietnam</option>
-                        <option value="visiting-brazil">Visiting Brazil</option>
-                        <option value="visiting-italy">Visiting Italy</option>
-                        <option value="visiting-spain">Visiting Spain</option>
-                        <option value="war-and-conflict">War and Conflict</option>
-                        <option value="weather-and-climate">Weather and Climate</option>
-                        <option value="weather-situations">Weather Situations</option>
-                        <option value="welcome-to-the-team">Welcome to the Team</option>
-                        <option value="what-if">What If</option>
-                        <option value="why-do-we-love">Why Do We Love</option>
-                        <option value="why-learn-business">Why Learn Business</option>
-                        <option value="work-clothes">Work Clothes</option>
-                        <option value="work-words">Work Words</option>
-                        <option value="writing-informal-business-emails">Writing Informal Business Emails</option>
-                    </select>                    
-
-                    <!-- B2/C1 Topics Dropdown -->
-                    <select id="lesson-topics-b2-c1" name="lesson-topics-b2-c1">
-                        <option value="" disabled selected>Select a topic</option>
-                        <option value="a-lucky-find">A Lucky Find</option>
-                        <option value="all-about-poop">All About Poop</option>
-                        <option value="asking-about-figures">Asking About Figures</option>
-                        <option value="body-language">Body Language</option>
-                        <option value="building-the-hoover-dam">Building the Hoover Dam</option>
-                        <option value="business-idioms">Business Idioms</option>
-                        <option value="changing-behaviour">Changing Behaviour</option>
-                        <option value="christmas-music">Christmas Music</option>
-                        <option value="combined-efforts">Combined Efforts</option>
-                        <option value="communicating-with-colleagues">Communicating with Colleagues</option>
-                        <option value="communicating-with-management">Communicating with Management</option>
-                        <option value="correcting-errors">Correcting Errors</option>
-                        <option value="cosplay-and-the-wing-maker">Cosplay and the Wing Maker</option>
-                        <option value="crime-and-punishment">Crime and Punishment</option>
-                        <option value="cyber-crime">Cyber Crime</option>
-                        <option value="djokovic-faces-deportation">Djokovic Faces Deportation</option>
-                        <option value="do-you-feel-fomo">Do You Feel FOMO</option>
-                        <option value="dress-code">Dress Code</option>
-                        <option value="excuses-excuses-excuses">Excuses, Excuses, Excuses</option>
-                        <option value="fake-photos">Fake Photos</option>
-                        <option value="finding-accommodation">Finding Accommodation</option>
-                        <option value="finding-work">Finding Work</option>
-                        <option value="food-waste">Food Waste</option>
-                        <option value="friendship-and-the-theory-of-mind">Friendship and the Theory of Mind</option>
-                        <option value="from-stingy-to-flashy">From Stingy to Flashy</option>
-                        <option value="get-the-picture">Get the Picture</option>
-                        <option value="grammar-guru">Grammar Guru</option>
-                        <option value="half-a-million-secrets">Half a Million Secrets</option>
-                        <option value="handsignal-saves-teenager">Handsignal Saves Teenager</option>
-                        <option value="happy-new-year">Happy New Year</option>
-                        <option value="helping-employees-with-disabilities">Helping Employees with Disabilities</option>
-                        <option value="hip-hop-beginnings">Hip Hop Beginnings</option>
-                        <option value="how-do-you-want-the-world-to-see-you">How Do You Want the World to See You</option>
-                        <option value="legal-vocabulary-in-use">Legal Vocabulary in Use</option>
-                        <option value="making-assumptions">Making Assumptions</option>
-                        <option value="managing-expansion">Managing Expansion</option>
-                        <option value="manslaughter">Manslaughter</option>
-                        <option value="measuring-productivity">Measuring Productivity</option>
-                        <option value="medical-english-review">Medical English Review</option>
-                        <option value="memory-tricks-linking-method">Memory Tricks Linking Method</option>
-                        <option value="modern-day-nomads">Modern-day Nomads</option>
-                        <option value="mompreneurs">Mompreneurs</option>
-                        <option value="movie-night">Movie Night</option>
-                        <option value="mukbang-great-or-gross">Mukbang Great or Gross</option>
-                        <option value="narcissism">Narcissism</option>
-                        <option value="negotiating-deals">Negotiating Deals</option>
-                        <option value="networking">Networking</option>
-                        <option value="office-speak">Office Speak</option>
-                        <option value="pass-the-wallet">Pass the Wallet</option>
-                        <option value="psychedelic-therapy">Psychedelic Therapy</option>
-                        <option value="quit-your-job-but-save-your-career">Quit Your Job but Save Your Career</option>
-                        <option value="reflect-on-speaking">Reflect on Speaking</option>
-                        <option value="reflect-on-the-use-of-english">Reflect on the Use of English</option>
-                        <option value="reflect-on-writing">Reflect on Writing</option>
-                        <option value="regrets">Regrets</option>
-                        <option value="reasons-for-leaving">Reasons for Leaving</option>
-                        <option value="reusing-and-recycling">Reusing and Recycling</option>
-                        <option value="revocation-and-relocation">Revocation and Relocation</option>
-                        <option value="second-year-blues">Second Year Blues</option>
-                        <option value="sight-reading">Sight Reading</option>
-                        <option value="solo-travel">Solo Travel</option>
-                        <option value="starting-and-running-a-small-business">Starting and Running a Small Business</option>
-                        <option value="the-body-keeps-the-score">The Body Keeps the Score</option>
-                        <option value="the-dawning-of-the-megastructure">The Dawning of the Megastructure</option>
-                        <option value="the-future-of-spaceflight">The Future of Spaceflight</option>
-                        <option value="the-halo-effect">The Halo Effect</option>
-                        <option value="the-limits-of-human-memory">The Limits of Human Memory</option>
-                        <option value="the-richard-branson-interview-part-2">The Richard Branson Interview - Part 2</option>
-                        <option value="the-right-age-for-a-smartphone">The Right Age for a Smartphone</option>
-                        <option value="the-most-dangerous-journey-on-earth">The Most Dangerous Journey on Earth</option>
-                        <option value="visiting-ghana">Visiting Ghana</option>
-                        <option value="visiting-brazil">Visiting Brazil</option>
-                        <option value="visiting-italy">Visiting Italy</option>
-                        <option value="waiting-in-line">Waiting in Line</option>
-                        <option value="weird-or-normal">Weird or Normal</option>
-                        <option value="what-if">What If</option>
-                        <option value="what-makes-you-laugh">What Makes You Laugh</option>
-                        <option value="what-why-how">What Why How</option>
-                        <option value="when-are-you-an-adult">When Are You an Adult</option>
-                        <option value="why-algospeak">Why Algospeak</option>
-                        <option value="why-do-we-glamorize-overwork">Why Do We Glamorize Overwork</option>
-                        <option value="why-do-we-take-selfies">Why Do We Take Selfies</option>
-                        <option value="why-its-cool-to-be-kind">Why It's Cool to Be Kind</option>
-                        <option value="would-you-walk-your-dog-around-the-world">Would You Walk Your Dog Around the World</option>
-                    </select>                  
-                  
-                    <!-- C1/C2 Topics Dropdown -->
-                    <select id="lesson-topics-c1-c2" name="lesson-topics-c1-c2">
-                        <option value="" disabled selected>Select a topic</option>
-                        <option value="annapurna-the-goddess-of-plenty">Annapurna: The Goddess of Plenty</option>
-                        <option value="building-the-hoover-dam">Building the Hoover Dam</option>
-                        <option value="buying-into-the-culture">Buying into the Culture</option>
-                        <option value="call-of-the-wild">Call of the Wild</option>
-                        <option value="chinas-terracotta-warriors">China’s Terracotta Warriors</option>
-                        <option value="clinical-oncology">Clinical Oncology</option>
-                        <option value="describing-symptoms">Describing Symptoms</option>
-                        <option value="diabetes">Diabetes</option>
-                        <option value="female-breadwinners">Female Breadwinners</option>
-                        <option value="grammar-school">Grammar School</option>
-                        <option value="hot-gossip">Hot Gossip</option>
-                        <option value="mindfulness">Mindfulness</option>
-                        <option value="mix-it-up">Mix It Up</option>
-                        <option value="nutritional-health">Nutritional Health</option>
-                        <option value="placebo-power">Placebo Power</option>
-                        <option value="reducing-errors">Reducing Errors</option>
-                        <option value="reflect-on-reading">Reflect on Reading</option>
-                        <option value="squeaky-clean">Squeaky Clean</option>
-                        <option value="teething-troubles">Teething Troubles</option>
-                        <option value="the-beginnings-of-comedy">The Beginnings of Comedy</option>
-                        <option value="the-book">The Book</option>
-                        <option value="the-dark-side-of-mindfulness">The Dark Side of Mindfulness</option>
-                        <option value="the-decline-of-digital-nomad">The Decline of Digital Nomad</option>
-                        <option value="the-sweet-smell-of-success">The Sweet Smell of Success</option>
-                        <option value="tourism-and-politics">Tourism and Politics</option>
-                        <option value="treasure-caves">Treasure Caves</option>
-                        <option value="when-a-crisis-strikes-a-good-leader">When a Crisis Strikes a Good Leader</option>
-                        <option value="your-place-in-space">Your Place in Space</option>
-                    </select>
-
-                    <!-- Teacher Dropdown -->
-                    <select id="teacher-name" name="teacher-name">
-                        <option value="" disabled selected>Teacher</option>
-                        <option value="ana-beatriz">Ana Beatriz</option>
-                        <option value="ana-leticia">Ana Letícia</option>
-                        <option value="bella">Bella</option>
-                        <option value="carol">Carol</option>
-                        <option value="charles">Charles</option>
-                        <option value="deluca">Deluca</option>
-                        <option value="debora">Débora</option>
-                        <option value="fred">Fred</option>
-                        <option value="icaro">Icaro</option>
-                        <option value="julia">Julia</option>
-                        <option value="leandro">Leandro</option>
-                        <option value="lesley">Lesley</option>
-                        <option value="livia">Livia</option>
-                        <option value="lucas">Lucas</option>
-                        <option value="nino">Nino</option>
-                        <option value="priscilla">Priscilla</option>
-                        <option value="ricardo">Ricardo</option>
-                        <option value="samuel">Samuel</option>
-                        <option value="thiago-fo">Thiago</option>
-                        <option value="vickie">Vickie</option>
-                        <option value="yanice">Yanice</option>
-                    </select>                    
-                </form>
+                </div>
+            </div>
+            <div id="check-btn">
+                <img src="images/icons/play.png">
             </div>
         </div>
+
+        <!-- Table to Display Registered Classes -->
+        <table id="class-table">
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Time</th>
+                    <th>Student ID</th>
+                    <th>Student Name</th>
+                    <th>Level</th>
+                    <th>Class Type</th>
+                    <th>Lesson Topic</th>
+                    <th>Teacher</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- New rows will be inserted here -->
+            </tbody>
+        </table>
     </div>
+
+
+    <!-- Script -->
     <script src="script.js"></script>
 </body>
 </html>
